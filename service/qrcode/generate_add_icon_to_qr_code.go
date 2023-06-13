@@ -1,4 +1,4 @@
-package qr_codes
+package qrcode
 
 import (
 	"fmt"
@@ -12,8 +12,8 @@ import (
 
 // GenerateQRCodeWithIcon generate QR Code with icon in the center position.
 func GenerateQRCodeWithIcon(data string, iconName string, fileName string) (string, error) {
-	iconPath := fmt.Sprintf("../assets/%v", iconName)
-	filePath := fmt.Sprintf("../samples/images/qr/%v", fileName)
+	iconPath := fmt.Sprintf("../../sample/logo/%v", iconName)
+	filePath := fmt.Sprintf("../../results/qr/%v", fileName)
 
 	// Create a new QR code barcode with the given data
 	qrCode, err := qr.Encode(data, qr.M, qr.Auto)

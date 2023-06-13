@@ -187,7 +187,7 @@ func AddQRCodeToPDF(filePath string, qrCodeName string, stampPosition string) er
 		return errors.New("QR Code is empty")
 	}
 
-	qrCode := fmt.Sprintf("../samples/images/qr/%v", qrCodeName)
+	qrCode := fmt.Sprintf("../../results/qr/%v", qrCodeName)
 
 	// Load the icon image
 	iconFile, err := os.Open(qrCode)
@@ -200,7 +200,7 @@ func AddQRCodeToPDF(filePath string, qrCodeName string, stampPosition string) er
 	}
 	defer iconFile.Close()
 
-	fileOutput := fmt.Sprintf("../samples/pdf/out/doc_out.pdf")
+	fileOutput := fmt.Sprintf("../../results/pdf/out/doc_out.pdf")
 
 	command := fmt.Sprintf("pdfcpu stamp add -pages even,odd  -mode image -- '%s' 'pos:%s, rot:0, sc:.1' %s %s", iconFile.Name(), stampPosition, filePath, fileOutput)
 
@@ -228,8 +228,8 @@ func AddQRCodeToPDF(filePath string, qrCodeName string, stampPosition string) er
 
 // ConvertDocumentToPDF converts a document file to PDF using pdfcpu-cli.
 func ConvertDocumentToPDF(doxcName string) (string, error) {
-	docxPath := fmt.Sprintf("../samples/images/doc/%s", doxcName)
-	pdfPath := fmt.Sprintf("../samples/pdf/out/sample_docx.pdf")
+	docxPath := fmt.Sprintf("../../sample/doc/%s", doxcName)
+	pdfPath := fmt.Sprintf("../../results/pdf/origin/%s", doxcName)
 
 	command := fmt.Sprintf("gs -sDEVICE=pdfwrite -o %s %s", pdfPath, docxPath)
 
@@ -246,8 +246,8 @@ func ConvertDocumentToPDF(doxcName string) (string, error) {
 
 // ConvertImageToPDF converts an image file to PDF using package gofpdf.
 func ConvertImageToPDF(imageFileName string) (string, error) {
-	imageFilePath := fmt.Sprintf("../samples/images/doc/%s", imageFileName)
-	imageFileOutput := fmt.Sprintf("../samples/pdf/origin/%s", imageFileName)
+	imageFilePath := fmt.Sprintf("../../sample/doc/%s", imageFileName)
+	imageFileOutput := fmt.Sprintf("../../results/pdf/origin/%s", imageFileName)
 
 	// Open the input image file
 	outputFile := fmt.Sprintf(util.ChangeFileExtension(imageFileOutput, "pdf"))
