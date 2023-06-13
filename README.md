@@ -3,11 +3,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Is a simple pdf file creation service in the golang programming language.
+Is a simple pdf file generator in the golang programming language.
 programs that are supported from the simple program code above
 1. create a qr-code (.png)
-2. add a favicon to the qr-code
-3. create a pdf file from an image
+2. add a icon to the qr-code
+3. create a pdf file from an image file
 4. add metadata to pdf files (Tittle, Author, Description, Keywords)
 5. modify pdf producer 
 6. encrypt and decrypt pdf files 
@@ -21,62 +21,16 @@ This section should list any major frameworks that you built your project using.
 
 <!-- GETTING STARTED -->
 ## Getting Started
+Before we get started, it's important to know that we run this code just from unit testing. So i didn't write a code to main.go
+So, let start it.
 
-This is how you may give instructions on setting up your project locally. To get a local copy up and running follow these simple example steps.
+You can start the first step from 2 different methods : 
+1. Generate PDF file first, or
+2. Generate QR Code first.
 
-### Prerequisites
+If you want to use method number 1, you just need to run unit testing in `serive/pdf/pdf_test.go` directory.
+Similarly, if you want to use method number 2, you just need to run unit testing in `serive/qrcode` directory. 
+But, we have something different in second method, you need to generetae QR Code first by running `generate_new_qr_code_test.go` first, and than `generate_add_icon_to_qr_code_test.go`
 
-This is how to list things you need to use the software and how to install them.
-
-* terminal
-  ```sh
-  brew install golang
-  ```
-
-### Installation
-
-1. Clone repo author-service
-   ```sh
-   git clone https://github.com/akhidnukhlis/simple-pdf-generator-with-qr
-   ```
-   
-2. Run command golang
-   ```sh
-   go mod tidy
-   ```
-   
-   ```sh
-   go mod download
-   ```
-   
-4. Run service
-   ```sh
-   go run main.go
-   ```
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/akhidnukhlis) for a list of proposed features (and known issues).
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/new-feature`)
-3. Commit your Changes (`git commit -m 'Add some new-feature'`)
-4. Push to the Branch (`git push origin feature/new-feature`)
-5. Open a Pull Request
-
-
-<!-- CONTACT -->
-## Contact
-
-Name - @akhidnukhlis - nukhlis@gmail.com
-
-Project Link: https://github.com/akhidnukhlis
-
-***
+## Afterword
+Hopefully, it can be easily understood and useful. Thank you~
