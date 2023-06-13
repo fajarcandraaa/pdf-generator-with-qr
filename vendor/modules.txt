@@ -1,0 +1,104 @@
+# cloud.google.com/go v0.100.2
+## explicit; go 1.11
+# cloud.google.com/go/compute v0.1.0
+## explicit; go 1.11
+# cloud.google.com/go/errorreporting v0.2.0
+## explicit; go 1.16
+# code.sajari.com/docconv v1.3.5
+## explicit; go 1.14
+# github.com/JalfResi/justext v0.0.0-20221106200834-be571e3e3052
+## explicit
+# github.com/PuerkitoBio/goquery v1.5.1
+## explicit; go 1.13
+# github.com/advancedlogic/GoOse v0.0.0-20191112112754-e742535969c1
+## explicit; go 1.13
+# github.com/andybalholm/cascadia v1.2.0
+## explicit; go 1.13
+# github.com/araddon/dateparse v0.0.0-20200409225146-d820a6159ab1
+## explicit
+# github.com/boombuler/barcode v1.0.1
+## explicit
+github.com/boombuler/barcode
+github.com/boombuler/barcode/qr
+github.com/boombuler/barcode/utils
+# github.com/davecgh/go-spew v1.1.1
+## explicit
+github.com/davecgh/go-spew/spew
+# github.com/fatih/set v0.2.1
+## explicit
+# github.com/gigawattio/window v0.0.0-20180317192513-0f5467e35573
+## explicit
+# github.com/go-resty/resty/v2 v2.3.0
+## explicit; go 1.11
+# github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e
+## explicit
+# github.com/golang/protobuf v1.5.2
+## explicit; go 1.9
+# github.com/google/go-cmp v0.5.7
+## explicit; go 1.11
+# github.com/googleapis/gax-go/v2 v2.1.1
+## explicit; go 1.11
+# github.com/gorilla/mux v1.8.0
+## explicit; go 1.12
+# github.com/jaytaylor/html2text v0.0.0-20200412013138-3577fbdbcff7
+## explicit
+# github.com/jung-kurt/gofpdf v1.16.2
+## explicit; go 1.12
+github.com/jung-kurt/gofpdf
+# github.com/kr/pretty v0.1.0
+## explicit
+# github.com/levigross/exp-html v0.0.0-20120902181939-8df60c69a8f5
+## explicit
+# github.com/mattn/go-runewidth v0.0.9
+## explicit; go 1.9
+# github.com/nguyenthenguyen/docx v0.0.0-20220721043308-1903da0ef37d
+## explicit; go 1.16
+# github.com/olekukonko/tablewriter v0.0.4
+## explicit; go 1.12
+# github.com/otiai10/gosseract/v2 v2.2.4
+## explicit
+# github.com/pkg/errors v0.9.1
+## explicit
+# github.com/pmezard/go-difflib v1.0.0
+## explicit
+github.com/pmezard/go-difflib/difflib
+# github.com/richardlehane/mscfb v1.0.3
+## explicit
+# github.com/richardlehane/msoleps v1.0.3
+## explicit
+# github.com/ssor/bom v0.0.0-20170718123548-6386211fdfcf
+## explicit
+# github.com/stretchr/testify v1.8.4
+## explicit; go 1.20
+github.com/stretchr/testify/assert
+# go.opencensus.io v0.23.0
+## explicit; go 1.13
+# golang.org/x/image v0.7.0
+## explicit; go 1.12
+golang.org/x/image/draw
+golang.org/x/image/math/f64
+# golang.org/x/net v0.6.0
+## explicit; go 1.17
+# golang.org/x/oauth2 v0.0.0-20211104180415-d3ed0bb246c8
+## explicit; go 1.11
+# golang.org/x/sync v0.1.0
+## explicit
+# golang.org/x/sys v0.5.0
+## explicit; go 1.17
+# golang.org/x/text v0.9.0
+## explicit; go 1.17
+# google.golang.org/api v0.67.0
+## explicit; go 1.11
+# google.golang.org/appengine v1.6.7
+## explicit; go 1.11
+# google.golang.org/genproto v0.0.0-20220207164111-0872dc986b00
+## explicit; go 1.11
+# google.golang.org/grpc v1.44.0
+## explicit; go 1.14
+# google.golang.org/protobuf v1.28.0
+## explicit; go 1.11
+# gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127
+## explicit
+# gopkg.in/yaml.v3 v3.0.1
+## explicit
+gopkg.in/yaml.v3
